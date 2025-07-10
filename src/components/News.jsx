@@ -48,7 +48,7 @@ const News = ({ simplified }) => {
               <div className="news-image-container">
                 <Title className="news-title" level={4}>{news.title}</Title>
                 <img src={news?.images?.thumbnailProxied ?? demoImage} alt="" style={{
-                  aspectRatio: 16/9,
+                  aspectRatio:16/9,
                   width: "160px"
                 }} />
               </div>
