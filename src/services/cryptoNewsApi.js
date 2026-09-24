@@ -4,7 +4,7 @@ const createRequest = (url) => ({ url, headers: cryptoNewsHeaders });
 
 export const cryptoNewsApi = createApi({
   reducerPath: 'cryptoNewsApi',
-  baseQuery: fetchBaseQuery({ baseUrl:'https://google-news13.p.rapidapi.com'   }),
+  baseQuery: fetchBaseQuery({  }),
   endpoints: (builder) => ({
     getCryptoNews: builder.query({
       query: ({ newsCategory, count }) => createRequest(`/business?lr=en-US`),
